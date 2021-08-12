@@ -13,6 +13,7 @@
             integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
             rel="stylesheet"
     />
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 <body>
 <div class="mdui-container">
@@ -103,7 +104,16 @@
     <h2>停下来听一首歌再走吧</h2>
 <!--suppress HtmlDeprecatedAttribute -->
     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=3&id=2487600423&auto=1&height=66"></iframe>
-
+<br><br>
+    <h2>留言板📔</h2>
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'YLwCDEc22hrOuhNxyryaUhim-gzGzoHsz',
+            appKey: '1bIVySG12j0GAVHSTpuI4e9f'
+        })
+    </script>
 
 <script
         crossorigin="anonymous"
